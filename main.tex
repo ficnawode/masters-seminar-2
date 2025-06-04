@@ -1,0 +1,46 @@
+\input{preamble.tex}
+
+\title{Presentation Template}
+    \subtitle{\textit{A latex template for presentations}}
+\author[T. Fic]{Tobiasz Fic}
+\institute[WUT]{Faculty of Physics, Warsaw University of Technology}
+
+\date{8 December 2023}
+
+\begin{document}
+
+\setbeamertemplate{headline}{}
+\setbeamertemplate{footline}{}
+\begin{frame}
+    \maketitle
+\end{frame}
+
+\setbeamertemplate{background}{}
+\setbeamertemplate{headline}[pwtemplate]
+\setbeamertemplate{footline}[pwtemplate]
+
+\begin{columnframe}{Column slide}
+    \begin{column}{0.5\textwidth}
+        \begin{figure}
+            \centering
+            \includegraphics[width=0.6\textwidth, frame]{images/pusheen.png}
+        \end{figure}
+    \end{column}
+    \begin{column}{0.5\textwidth}
+        \begin{itemize}
+            \item one \keV
+            \item two \MeV
+            \item three \GeV
+            \item \aegis
+        \end{itemize}
+    \end{column}
+\end{columnframe}
+
+\setbeamertemplate{headline}{}
+\setbeamertemplate{footline}{}
+\begin{frame}{}
+    \centering
+    \Large{Thank you for your attention}
+\end{frame}
+
+\end{document}
