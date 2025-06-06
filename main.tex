@@ -20,31 +20,28 @@
 \setbeamertemplate{headline}[pwtemplate]
 \setbeamertemplate{footline}[pwtemplate]
 
-\begin{columnframe}{CERN and AEgIS}
-    \begin{column}{0.5\textwidth}
-        \begin{figure}
-            \centering
-            \includegraphics[width=0.6\textwidth, frame]{images/pusheen.png}
-        \end{figure}
-        \todo{Picture of AEgIS experiment}
-    \end{column}
-    \begin{column}{0.5\textwidth}
-        \begin{itemize}
-            \item \todo{what aegis does}
-        \end{itemize}
-    \end{column}
-\end{columnframe}
+\begin{frame}{CERN and AEgIS}
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.8\textwidth, frame]{images/AEGIS_IonTrap.png}
+    \end{figure}
+    The main goal of \aegis is to measure gravity of antimatter.
+\end{frame}
 
 \begin{columnframe}{Background and Motivation}
     \begin{column}{0.5\textwidth}
         \begin{figure}
             \centering
-            \includegraphics[width=0.6\textwidth, frame]{images/pusheen.png}
+            \includegraphics[width=0.95\textwidth, frame]{images/antiprotonic_atom_diagram.png}
         \end{figure}
-        \todo{Figure of antiprotonic atom}
     \end{column}
     \begin{column}{0.5\textwidth}
-        \todo{What do we want to measure?}
+        \begin{itemize}
+            \item \aegis also studies antiprotonic atoms
+            \item Antiprotonic atoms are formed by exposing low-pressure gas to antiprotons
+            \item AA are not stable, they decay fast, emitting radiation
+            \item This radiation contains information about the atom
+        \end{itemize}
     \end{column}
 \end{columnframe}
 
@@ -52,15 +49,13 @@
     \begin{column}{0.5\textwidth}
         \begin{figure}
             \centering
-            \includegraphics[width=0.6\textwidth, frame]{images/pusheen.png}
+            \includegraphics[width=0.95\textwidth]{images/perfect_scintillator.jpg}
         \end{figure}
-        \todo{Two images: diagram of scintillator detector and a spectrum of a gamma source}
     \end{column}
     \begin{column}{0.5\textwidth}
         \begin{itemize}
-            \item Energy of incident gamma photon is turned into multiple UV photons
-            \item UV photons are collected by the PMT
-            \item The signal from the PMT is perfectly proportional in height to the energy of  the incident gamma photon
+            \item $E_{\text{incident particle}} \longrightarrow N*E_{\gamma - UV}$ (linearly)
+            \item Signal height at PMT proportional to $N$
         \end{itemize}
     \end{column}
 \end{columnframe}
@@ -69,47 +64,101 @@
     \begin{column}{0.5\textwidth}
         \begin{figure}
             \centering
-            \includegraphics[width=0.6\textwidth, frame]{images/pusheen.png}
+            \includegraphics[width=0.9\textwidth, frame]{images/photonis_teardown_1.JPG}
         \end{figure}
-        \todo{Picture of PMT}
     \end{column}
     \begin{column}{0.5\textwidth}
-        \todo{describe what we have and what it is}
+        \begin{itemize}
+            \item The detector available is repurposed from a PET scanner
+            \item It is a BGO scintillator with a PMT
+        \end{itemize}
     \end{column}
 \end{columnframe}
 
-\begin{columnframe}{Expected results}
+\begin{columnframe}{Available radiation sources}
     \begin{column}{0.5\textwidth}
         \begin{figure}
             \centering
-            \includegraphics[width=0.6\textwidth, frame]{images/pusheen.png}
+            \includegraphics[width=0.6\textwidth, frame]{images/radioactive_sources.png}
         \end{figure}
-        \todo{Picture of three sources}
     \end{column}
     \begin{column}{0.5\textwidth}
-        \begin{figure}
-            \centering
-            \includegraphics[width=0.6\textwidth, frame]{images/pusheen.png}
-        \end{figure}
-        \todo{Their expected spectra}
+        \begin{itemize}
+            \item Co-60 - gamma radiation, peaks at 1.17 and 1.33 \MeV
+            \item Na-22 - gamma radiation, peaks at 0.511 \MeV and 1.275 \MeV
+            \item Cs-137 - gamma radiation, peak at 0.662 \MeV
+        \end{itemize}
     \end{column}
 \end{columnframe}
+
+\begin{frame}[plain]
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+            \begin{figure}
+                \centering
+                \includegraphics[width=0.8\textwidth, frame]{images/co60_theoretical.jpg}
+            \end{figure}
+        \end{column}
+        \begin{column}{0.5\textwidth}
+            \begin{figure}
+                \centering
+                \includegraphics[width=0.99\textwidth, frame]{images/na22_theoretical.jpg}
+            \end{figure}
+        \end{column}
+    \end{columns}
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+            \begin{figure}
+                \centering
+                \includegraphics[width=0.8\textwidth, frame]{images/cs137_theoretical.jpg}
+            \end{figure}
+        \end{column}
+        \begin{column}{0.5\textwidth}
+            \imagesource{Gabriela Llosá, Trovato Marco, John Barrio, Ane Etxebeste, Enrique Muñoz, Carlos Lacasta, Josep Oliver,
+                Magdalena Rafecas, Carles Solaz, and Paola Solevi. First images of a three-layer compton telescope
+                prototype for treatment monitoring in hadron therapy. Frontiers in Oncology, 6, 02 2016.}
+            \vspace{0.3cm}
+
+            \imagesource{nuclear-power.com.
+                Spectroscopy using germanium semiconductor – hpge.
+                https://www.nuclear-power.com/nuclear-engineering/
+                radiation-detection/gamma-spectroscopy/
+                spectroscopy-using-germanium-semiconductor-hpge/, 2025. Accessed: 2025-05-07.}
+            \vspace{0.3cm}
+
+            \imagesource{Kajal Kumari and Mayank Goswami. Relative estimation of scattering noise and electronic noise of a
+                radiation detector. Measurement Science and Technology, 34, 08 2023.}
+        \end{column}
+    \end{columns}
+\end{frame}
 
 \begin{columnframe}{Teardown}
     \begin{column}{0.5\textwidth}
         \begin{figure}
             \centering
-            \includegraphics[width=0.6\textwidth, frame]{images/pusheen.png}
+            \includegraphics[width=0.6\textwidth, frame]{images/photonis_teardown_4.JPG}
+            % direction: trim=left bottom right top
+            \includegraphics[trim=0 200 0 1800, clip, width=0.6\textwidth, frame]{images/PMT_iso_wipe.JPG}
         \end{figure}
-        \todo{Teardown sequence}
     \end{column}
     \begin{column}{0.5\textwidth}
+        \begin{figure}
+            \centering
+            \includegraphics[width=0.6\textwidth, frame]{images/crystals_pack_2.JPG}
+        \end{figure}
         \begin{itemize}
             \item The initial performance of the module was subpar
             \item The detector was disassembled for component-level analysis
         \end{itemize}
     \end{column}
 \end{columnframe}
+
+\begin{frame}{Teardown - Broken Stripped PMT}
+    \begin{figure}
+        \centering
+        \includegraphics[trim=0 120 0 70, clip, width=0.9\textwidth, frame]{images/stripped_pmt_3_annotated.png}
+    \end{figure}
+\end{frame}
 
 % \begin{columnframe}{}
 %     \begin{column}{0.5\textwidth}
@@ -122,9 +171,8 @@
     \begin{column}{0.5\textwidth}
         \begin{figure}
             \centering
-            \includegraphics[width=0.6\textwidth, frame]{images/pusheen.png}
+            \includegraphics[width=0.9\textwidth, frame]{images/sigp2p_to_noisep2p.jpg}
         \end{figure}
-        \todo{plot of PMT noise to signal ratio}
     \end{column}
     \begin{column}{0.5\textwidth}
         \begin{itemize}
@@ -136,20 +184,26 @@
     \end{column}
 \end{columnframe}
 
+
+\begin{frame}{Measuring Time Characteristics}
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.7\textwidth]{images/example_time_fitting.png}
+    \end{figure}
+\end{frame}
+
 \begin{columnframe}{Signal/Bias Voltage Time Characteristics}
     \begin{column}{0.5\textwidth}
         \begin{figure}
             \centering
-            \includegraphics[width=0.6\textwidth, frame]{images/pusheen.png}
+            \includegraphics[width=0.8\textwidth, frame]{images/rise_times_bias.png}
         \end{figure}
-        \todo{plot signal rise/fall time fitting}
     \end{column}
     \begin{column}{0.5\textwidth}
         \begin{figure}
             \centering
-            \includegraphics[width=0.6\textwidth, frame]{images/pusheen.png}
+            \includegraphics[width=0.8\textwidth, frame]{images/fall_times_bias.png}
         \end{figure}
-        \todo{two plots one on top of the other: stable rise times and stable fall times}
     \end{column}
 \end{columnframe}
 
@@ -157,66 +211,140 @@
     \begin{column}{0.5\textwidth}
         \begin{figure}
             \centering
-            \includegraphics[width=0.6\textwidth, frame]{images/pusheen.png}
+            \includegraphics[width=0.8\textwidth, frame]{images/rise_times_att.png}
         \end{figure}
-        \todo{plot signal rise/fall time fitting}
     \end{column}
     \begin{column}{0.5\textwidth}
         \begin{figure}
             \centering
-            \includegraphics[width=0.6\textwidth, frame]{images/pusheen.png}
+            \includegraphics[width=0.8\textwidth, frame]{images/fall_times_att.png}
         \end{figure}
-        \todo{two plots one on top of the other: stable rise times and stable fall times}
     \end{column}
 \end{columnframe}
 
 \begin{columnframe}{PMT Spectroscopy Setup}
     \begin{column}{0.5\textwidth}
+        \begin{figure}
+            \centering
+            \includegraphics[width=0.7\textwidth, frame]{images/pmt_spectroscopy_setup.jpg}
+            \includegraphics[width=0.3\textwidth, frame]{images/wrapped_crystals.jpg}
+        \end{figure}
     \end{column}
     \begin{column}{0.5\textwidth}
+        \begin{itemize}
+            \item An enclosure was designed and 3D-printed to hold the PMT and two intact crystals
+            \item The signal is read out via an osciloscope
+        \end{itemize}
     \end{column}
 \end{columnframe}
 
 \begin{columnframe}{PMT Spectroscopy Raw Results}
     \begin{column}{0.5\textwidth}
-        \todo{results here}
+        \begin{figure}
+            \centering
+            \includegraphics[width=0.65\textwidth]{images/pmt_raw_spectra.jpg}
+        \end{figure}
     \end{column}
     \begin{column}{0.5\textwidth}
-        \todo{describe and remind what we are looking for}
+        \begin{itemize}
+            \item Reminder: Co-60 peaks at 1.17 and 1.33 \MeV
+            \item Reminder: Na-22 peaks at 511 \keV and 1275 \keV
+            \item Reminder: Cs-137 peaks at 662 \keV
+            \item The peaks are visible, but not very pronounced - therefore we proceed to fitting
+        \end{itemize}
     \end{column}
 \end{columnframe}
 
-\begin{columnframe}{PMT Spectroscopy Results}
-    \begin{column}{0.5\textwidth}
-    \end{column}
-    \begin{column}{0.5\textwidth}
-    \end{column}
-\end{columnframe}
+\begin{frame}[plain]
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+            \begin{figure}
+                \centering
+                \includegraphics[width=0.85\textwidth]{images/pmt_spectra.png}
+            \end{figure}
+        \end{column}
+        \begin{column}{0.5\textwidth}
+            \begin{itemize}
+                \item The peaks are fitted with gaussian functions
+                \item Background is modelled with a polynomial or exponential function
+                \item Calibration is done using the known energies of the peaks
+                \item Reminder: Co-60 (1170 and 1330 \keV), Na-22 (511 \keV and 1275 \keV), Cs-137 (662 \keV)
+            \end{itemize}
+        \end{column}
+    \end{columns}
+\end{frame}
 
 \begin{columnframe}{SiPM Spectroscopy Setup}
     \begin{column}{0.5\textwidth}
+        \begin{figure}
+            \centering
+            \includegraphics[trim=0 0 0 0, clip, width=0.8\textwidth, frame]{images/pcb_in_enclosure.jpg}
+            \includegraphics[trim=0 0 0 0, clip, width=0.8\textwidth, frame]{images/sipm_spectroscopy_setup.jpg}
+        \end{figure}
     \end{column}
     \begin{column}{0.5\textwidth}
+        \begin{itemize}
+            \item An enclosure was designed and 3D-printed to hold the SiPM and two intact crystals
+            \item The signal is once again read out via an osciloscope
+        \end{itemize}
     \end{column}
 \end{columnframe}
 
-\begin{columnframe}{SiPM Spectroscopy Results}
-    \begin{column}{0.5\textwidth}
-    \end{column}
-    \begin{column}{0.5\textwidth}
-    \end{column}
-\end{columnframe}
+\begin{frame}[plain]
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+            \begin{figure}
+                \centering
+                \includegraphics[width=0.85\textwidth]{images/sipm_spectra.png}
+            \end{figure}
+        \end{column}
+        \begin{column}{0.5\textwidth}
+            \begin{itemize}
+                \item The peaks are fitted with gaussian functions
+                \item Background is modelled with a polynomial function
+                \item Calibration is done using the known energies of the peaks
+                \item Reminder: Co-60 (1170 and 1330 \keV), Na-22 (511 \keV and 1275 \keV), Cs-137 (662 \keV)
+            \end{itemize}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+\begin{frame}{SiPM - PMT Energy Resolution Comparison}
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+            \begin{figure}
+                \centering
+                \includegraphics[width=0.8\textwidth]{images/PMT_dE_ov_E.png}
+                \caption{PMT energy resolution as a function of energy}
+            \end{figure}
+        \end{column}
+        \begin{column}{0.5\textwidth}
+            \begin{figure}
+                \centering
+                \includegraphics[width=0.8\textwidth]{images/SiPM_dE_ov_E.png}
+                \caption{SiPM energy resolution as a function of energy}
+            \end{figure}
+        \end{column}
+    \end{columns}
+\end{frame}
 
 \begin{columnframe}{Lastly... a Muon Telescope}
     \begin{column}{0.5\textwidth}
         \begin{figure}
             \centering
-            \includegraphics[width=0.6\textwidth, frame]{images/pusheen.png}
+            \includegraphics[trim=0 500 0 500, clip, width=0.8\textwidth, frame]{images/muon_telescope_setup.jpg}
+            \includegraphics[width=0.6\textwidth, frame]{images/muon_coincidence_screenshot.jpg}
         \end{figure}
-        \todo{Picture of setup}
     \end{column}
     \begin{column}{0.5\textwidth}
-        \todo{plot of landau}
+        \begin{figure}
+            \centering
+            \includegraphics[width=0.8\textwidth, frame]{images/landau_fit.jpg}
+        \end{figure}
+        \begin{itemize}
+            \item The telescope consists of two SiPM triggers and the BGO-PMT in the middle
+            \item The landau distribution of the muon signal is apparent
+        \end{itemize}
     \end{column}
 \end{columnframe}
 
